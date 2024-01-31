@@ -9,6 +9,11 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow: hidden;
+  background: url(../src/assets/images/bg2.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: 50%;
 }
 
 code {
