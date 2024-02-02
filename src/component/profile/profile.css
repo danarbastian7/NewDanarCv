@@ -55,3 +55,12 @@
 .timelineItem_text > span {
   color: black;
 }
+
+.profile .button_container {
+  width: 100%;
+  display: "flex" !important;
+  justify-content: center;
+  margin-top: -50px;
+  padding-bottom: 2vh;
+  color-scheme: white;
+}

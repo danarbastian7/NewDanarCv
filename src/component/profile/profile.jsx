@@ -13,6 +13,7 @@ import {
   TimelineSeparator,
 } from "@mui/lab";
 import ButtonPress from "../button/button";
+import GetAppIcon from "@mui/icons-material/GetApp";
 
 const CustomTimelineItem = ({ title, text, link }) => (
   <TimelineItem className="timeline_firstItem">
@@ -69,7 +70,14 @@ const Profile = () => {
         </CustomTimeline>
       </div>
       <br />
-      <ButtonPress text={"Download CV"} />
+      <div
+        className="button_container"
+        style={{
+          display: "flex",
+        }}
+      >
+        <ButtonPress text={"Download CV"} icon={<GetAppIcon />} />
+      </div>
     </div>
   );
 };

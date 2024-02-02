@@ -36,8 +36,8 @@
 }
 
 .timeline .timeline_dot_header > .MuiSvgIcon-root {
-  font-size: 20px;
-  color: darkslategray;
+  font-size: 25px;
+  color: white;
 }
 
 .timeline .separator_padding {

@@ -14,18 +14,11 @@ function App() {
           <Grid item lg={4} md={4} xs={12} sm={12}>
             <Profile />{" "}
           </Grid>
-          <Grid
-            item
-            xs
-            style={{
-              backgroundColor: "white",
-
-              boxShadow:
-                "4px 4px 8px 0 rgba(0, 0, 0, 0.2), 6px 6px 20px 0 rgba(0, 0, 0, 0.19)",
-            }}
-          >
+          <Grid item xs>
             <Header />
-            <Resume />
+            <div className="main-content">
+              <Resume />
+            </div>
             <Footer />
           </Grid>
         </Grid>
