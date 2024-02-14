@@ -7,19 +7,19 @@
 }
 
 .top_30 {
-  margin-top: 30px !important;
+  /* margin-top: 30px !important; */
 }
 
 .mb_30 {
-  margin-bottom: 30px !important;
+  /* margin-bottom: 30px !important; */
 }
 
 .p_30 {
-  padding: 30px !important;
+  /* padding: 30px !important; */
 }
 
 .p_45 {
-  padding-bottom: 45px !important;
+  /* padding-bottom: 45px !important; */
 }
 
 @media (max-width: 991px) {

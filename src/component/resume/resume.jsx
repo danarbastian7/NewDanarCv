@@ -6,6 +6,7 @@ import CustomTimeline, {
   CustomTimelineSeparator,
 } from "../../component/timeline/timeline";
 import WorkIcon from "@mui/icons-material/Work";
+import SchoolIcon from "@mui/icons-material/School";
 import {
   TimelineContent,
   TimelineDot,
@@ -41,13 +42,16 @@ const Resume = () => {
           <Grid container className="resume_timeline">
             {/* Experiences */}
             <Grid item sm={12} md={6}>
-              <CustomTimeline title={"Work History"} icon={<WorkIcon />}>
+              <CustomTimeline title={"Work Experiences"} icon={<WorkIcon />}>
                 {resumeDate.experiences.map((experience) => (
                   <TimelineItem>
                     <CustomTimelineSeparator />
-                    <TimelineContent>
+                    <TimelineContent className="timeline_content">
                       <Typography className="timeline_title">
                         {experience.title}
+                      </Typography>
+                      <Typography className="timeline_office">
+                        {experience.office}
                       </Typography>
                       <Typography variant="caption" className="timeline_date">
                         {experience.date}
@@ -64,7 +68,32 @@ const Resume = () => {
               </CustomTimeline>
             </Grid>
             {/* Education */}
-            <Grid item sm={12} md={6}></Grid>
+            <Grid item sm={12} md={6}>
+              <CustomTimeline title={"Education"} icon={<SchoolIcon />}>
+                {resumeDate.education.map((experience) => (
+                  <TimelineItem>
+                    <CustomTimelineSeparator />
+                    <TimelineContent className="timeline_content">
+                      <Typography className="timeline_title">
+                        {experience.title}
+                      </Typography>
+                      <Typography className="timeline_office">
+                        {experience.office}
+                      </Typography>
+                      <Typography variant="caption" className="timeline_date">
+                        {experience.date}
+                      </Typography>
+                      <Typography
+                        variant="body2"
+                        className="timeline_description"
+                      >
+                        {experience.description}
+                      </Typography>
+                    </TimelineContent>
+                  </TimelineItem>
+                ))}
+              </CustomTimeline>
+            </Grid>
           </Grid>
         </Grid>
       </Grid>

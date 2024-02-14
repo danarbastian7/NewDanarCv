@@ -8,10 +8,11 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 function App() {
   return (
-    <div className="App">
+    // <div>
+    <>
       <Container className="top_60">
         <Grid container spacing={7}>
-          <Grid item lg={4} md={4} xs={12} sm={12}>
+          <Grid item lg={3} md={4} xs={12} sm={12}>
             <Profile />{" "}
           </Grid>
           <Grid item xs>
@@ -26,7 +27,8 @@ function App() {
       <Routes>
         <Route path="/resume" element={<Resume />} />
       </Routes>
-    </div>
+    </>
+    // </div>
   );
 }
 

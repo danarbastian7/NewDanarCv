@@ -2,6 +2,9 @@ import FacebookIcon from "@mui/icons-material/Facebook";
 import XIcon from "@mui/icons-material/X";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import GitHubIcon from "@mui/icons-material/GitHub";
+import WebOutlinedIcon from "@mui/icons-material/WebOutlined";
+import ApartmentOutlinedIcon from "@mui/icons-material/ApartmentOutlined";
+import Diversity1OutlinedIcon from "@mui/icons-material/Diversity1Outlined";
 
 export default {
   name: "Danar Sadan Bastian",
@@ -75,10 +78,30 @@ export default {
         "Graduated in bachelor from the best university in Indonesia with GPA: 3.38/4.00.",
     },
     {
-      title: "Full Stack Developer - Purwadhika Digital Tech.",
+      title: "Full Stack Developer",
+      office: "Purwadhika Digital Tech.",
       date: "July 2022 - December 2022",
       description:
         "Course graduated as full stack web development with the updated curriculum and qualified mentor.",
+    },
+  ],
+  services: [
+    {
+      title: "Web Dev",
+      description:
+        "I think I am in medium level, but I have ability to always learn everything",
+      icon: <WebOutlinedIcon />,
+    },
+    {
+      title: "Civil Engineer",
+      description: "Able to design and build your comfort home",
+      icon: <ApartmentOutlinedIcon />,
+    },
+    {
+      title: "Good Listener",
+      description:
+        "If you need a friend to share your problem, I will be there for you",
+      icon: <Diversity1OutlinedIcon />,
     },
   ],
 };

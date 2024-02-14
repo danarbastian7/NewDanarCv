@@ -43,7 +43,7 @@ const Profile = () => {
         <Typography className="name">{resumeDate.name}</Typography>
         <Typography className="title">{resumeDate.title}</Typography>
       </div>
-      <div className="profile_image">
+      {/* <div className="profile_image">
         <Avatar
           alt="danar"
           src={DisplayImage}
@@ -53,7 +53,10 @@ const Profile = () => {
             height: "280px",
           }}
         />
-      </div>
+      </div> */}
+      <figure className="profile_image">
+        <img alt="danar" src={DisplayImage} />
+      </figure>
       <div className="profile_information">
         <CustomTimeline icon={<PersonOutlineIcon />}>
           <CustomTimelineItem title="Name" text={resumeDate.name} />
