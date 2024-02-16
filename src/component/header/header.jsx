@@ -21,7 +21,7 @@ const Header = (props) => {
       <Navbar.Toggle />
       <Navbar.Collapse>
         <Nav className="header_left">
-          <Nav.Link
+          {/* <Nav.Link
             as={NavLink}
             to={"/resume"}
             className={
@@ -29,8 +29,21 @@ const Header = (props) => {
             }
           >
             Resume
+          </Nav.Link> */}
+          <Nav.Link
+            as={NavLink}
+            to={"/contact"}
+            className={
+              pathName == "/resume" ? "header_link_active" : "header_link"
+            }
+          >
+            {/* <a href="#contact">
+            Contact me
+            </a> */}
+            Contact me
           </Nav.Link>
         </Nav>
+
         <div className="header_right">
           {Object.keys(resumeDate.socials).map((key) => (
             <a href={resumeDate.socials[key].link} target="_blank">

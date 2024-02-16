@@ -104,4 +104,33 @@ export default {
       icon: <Diversity1OutlinedIcon />,
     },
   ],
+  skills: [
+    {
+      title: "Front-End",
+      description: [
+        "ReactJS",
+        "JavaScrip",
+        "Material UI",
+        "Bootstrap",
+        "Chakra UI",
+        "HTML-CSS",
+      ],
+    },
+    {
+      title: "Back-End",
+      description: ["Node JS", "Python", "MySQL", "Postman"],
+    },
+    {
+      title: "Civil Engineer",
+      description: [
+        "ArchiCAD",
+        "AutoCAD",
+        "QGIS",
+        "Cloud Compare",
+        "Plaxis",
+        "ETABS",
+        "SAP2000",
+      ],
+    },
+  ],
 };
