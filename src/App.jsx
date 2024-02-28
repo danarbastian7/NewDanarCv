@@ -10,13 +10,25 @@ function App() {
   return (
     // <div>
     <>
-      <Container className="top_60">
-        <Grid container spacing={7}>
-          <Grid item lg={3} md={4} xs={12} sm={12}>
+      <Container className="top_30">
+        <Grid container>
+          <Grid item xs={12}>
+            <Header />
+          </Grid>
+          <Grid
+            item
+            xs={12}
+            sm={12}
+            md={4}
+            lg={3}
+            marginRight={{
+              xs: 0,
+              md: 5,
+            }}
+          >
             <Profile />{" "}
           </Grid>
           <Grid item xs>
-            <Header />
             <div className="main-content">
               <Resume />
             </div>
@@ -24,6 +36,7 @@ function App() {
           </Grid>
         </Grid>
       </Container>
+
       <Routes>
         <Route path="/resume" element={<Resume />} />
       </Routes>
